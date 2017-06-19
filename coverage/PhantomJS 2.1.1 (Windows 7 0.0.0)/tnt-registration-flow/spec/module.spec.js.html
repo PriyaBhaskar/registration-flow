@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for ./tnt-registration-flow/spec/module.spec.js</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../prettify.css">
+    <link rel="stylesheet" href="../../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header high">
+    <h1>Code coverage report for <span class="entity">./tnt-registration-flow/spec/module.spec.js</span></h1>
+    <h2>
+        Statements: <span class="metric">100% <small>(46 / 46)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">100% <small>(0 / 0)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">100% <small>(13 / 13)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">100% <small>(46 / 46)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../../index.html">All files</a> &#187; <a href="index.html">./tnt-registration-flow/spec/</a> &#187; module.spec.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91</td><td class="line-coverage"><span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">describe('tnt-registration-flow.mainController', function() {
+    'use strict';
+&nbsp;
+    var controller, createController, ctrl, httpBackend, DeferredObj, element, rootScope, scope, vm, appConstants, registerService, registerServiceData;
+&nbsp;
+    beforeEach(module('tnt'));
+    beforeEach(module('app.tnt-registration-flow'));
+&nbsp;
+    beforeEach(inject(function($injector, $rootScope, $compile, $componentController, $templateCache) {
+        scope = $rootScope.$new();
+        rootScope = $injector.get('$rootScope');
+        appConstants = $injector.get('appConstants');
+&nbsp;
+        DeferredObj = function(){
+            this.then = function (_successCallback, _errorCallback) {
+                this.successCallback = _successCallback;
+                this.errorCallback = _errorCallback;
+                this.catchCallback = _errorCallback;
+                return this;
+            };
+            this.catch = function (error){
+                this.catchCallback = error;
+            };
+            this.resolve = function (data) {
+                this.successCallback(data);
+            };
+            this.reject = function (error) {
+                this.catchCallback(error);
+            };
+        };
+&nbsp;
+        registerServiceData = {};
+        registerService = {
+            registerUser: function() {
+                this.deferredObj = new DeferredObj();
+                return this.deferredObj;
+            }
+        };
+&nbsp;
+        $templateCache.put("tnt-registration-flow/module.html", '&lt;section class="tnt-registration-flow"&gt;\r\n	&lt;form novalidate id="userRegisterForm" name="userRegisterForm" class="user-register-form" ng-submit="userRegisterForm.$valid &amp;&amp; $ctrl.submitUserRegistration(user.email, user.password)"&gt;\r\n		&lt;div class="form-enter-desc"&gt;Please enter your details&lt;/div&gt;\r\n		&lt;fieldset class="form-data"&gt;\r\n			&lt;input class="input-details" type="email" name="email" ng-model="user.email" placeholder="Email"/&gt;\r\n			&lt;span ng-if="userRegisterForm.email.$invalid" class="error-msg"&gt;Please enter a valid email id&lt;/span&gt;\r\n			&lt;input class="input-details" type="password" name="userpassword" ng-model="user.password" placeholder="New password" required tnt-form-validator/&gt;\r\n			&lt;div ng-if="userRegisterForm.userpassword.$invalid"&gt;\r\n				&lt;span class="error-msg"&gt;Please enter a valid password. &lt;/span&gt;\r\n					&lt;ul class="password-rules-msg"&gt;Your password should meet the following rules:\r\n						&lt;li ng-if="!validate.isOrdered"&gt;Passwords must include one increasing straight of at least three letters,\r\n							like abc, bcd, cde, and so on, up to xyz. They cannot skip letters; abd doesn\'t\r\n							count.&lt;/li&gt;\r\n						&lt;li ng-if="!validate.isIgnoreSelected"&gt;Passwords may not contain the letters i, o, or l, as these letters can be mistaken\r\n							for other characters and are therefore confusing.\r\n						&lt;/li&gt;\r\n						&lt;li ng-if="!validate.isOverlapping"&gt;Passwords must contain at least two non-overlapping pairs of letters,\r\n							like aa, bb, or zz.&lt;/li&gt;\r\n						&lt;li ng-if="!validate.islength"&gt;Passwords cannot be longer than 32 characters.&lt;/li&gt;\r\n						&lt;li ng-if="validate.isUppercase"&gt;Passwords can only contain lower case alphabetic characters.&lt;/li&gt;\r\n					&lt;/ul&gt;\r\n			&lt;/div&gt;\r\n			&lt;input class="input-details" type="password" name="confirmpassword" ng-model="user.confirmpassword" placeholder="Confirm New password" required ng-pattern="{{user.password}}" tnt-form-validator/&gt;\r\n			&lt;span ng-if="userRegisterForm.confirmpassword.$invalid" class="error-msg"&gt;Please confirm your password correctly&lt;/span&gt;\r\n		&lt;/fieldset&gt;\r\n		&lt;div class="input-agreement"&gt;\r\n			&lt;input type="checkbox" name="signInAgreement" value="true"&gt;I agree to TNT\'s &lt;a class="signInLink" href="http://www.tnt.com/express/en_gb/site/home/terms-conditions.html"&gt;terms and condition&lt;/a&gt;\r\n		&lt;/div&gt;\r\n		&lt;button form="userRegisterForm" type="submit" class="user-register-submit" ng-class="userRegisterForm.$valid ? \'enable-submit\':\'disable-submit\'" value="Submit"&gt;Next&lt;/button&gt;\r\n		&lt;div class="errors"&gt;\r\n			&lt;div ng-if="$ctrl.register.success" class="success-msg"&gt;You have received an e-mail to confirm your registration.&lt;/div&gt;\r\n			&lt;div ng-if="$ctrl.register.error" class="error-msg"&gt;Something went wrong. Please try again later.&lt;/div&gt;\r\n		&lt;/div&gt;\r\n	&lt;/form&gt;\r\n&lt;/section&gt;')
+        element = angular.element('&lt;tnt-registration-flow&gt;&lt;/tnt-registration-flow&gt;');
+        element = $compile(element)(scope);
+        controller = $componentController('tntRegistrationFlow', {$scope: scope,
+            '$http': httpBackend,
+            'appConstants': appConstants,
+            'registerService': registerService});
+        scope.$apply();
+        vm = controller;
+    }));
+&nbsp;
+    afterEach(inject(function(){
+    }));
+&nbsp;
+&nbsp;
+    it('should initialize controller', function() {
+        expect(vm).not.toBeNull();
+    });
+&nbsp;
+    it('Controller should initialize default variables', function() {
+        expect(vm.register).toBeDefined();
+    });
+&nbsp;
+    it('Should fail to submit the user registration form', function() {
+        var data = {
+            email : {value: 'priya.sagu@gmail.com'},
+            userpassword : {value: 'aabcc'}
+        };
+        var error = {'status': 500}
+        vm.submitUserRegistration(data);
+        registerService.deferredObj.reject(error);
+        expect(vm.register.error).toEqual(true);
+    });
+&nbsp;
+&nbsp;
+    it('Should submit the user registration form', function() {
+        var data = {
+            email : {value: 'priya.sagu@gmail.com'},
+            userpassword : {value: 'aabcc'}
+        };
+&nbsp;
+        vm.submitUserRegistration(data);
+        registerService.deferredObj.resolve(registerServiceData);
+        expect(vm.register.success).toEqual(true);
+    });
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+});
+&nbsp;
+&nbsp;</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Mon Jun 19 2017 11:44:02 GMT+0200 (West-Europa (zomertijd))</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "tnt-registration-flow",
+  "version": "1.0.0",
+  "description": "tnt registration flow",
+  "authors": [],
+  "license": "ISC",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "lib",
+    "test"
+  ],
+  "devDependencies": {
+    "angular-mocks": "1.5.8",
+    "angular": "1.6.2"
+  }
+
+}

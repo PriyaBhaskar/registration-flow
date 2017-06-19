@@ -1,0 +1,109 @@
+/* line 1, ../../tnt-registration-flow/scss/module.scss */
+.tnt-registration-flow {
+  width: 30rem;
+  height: 30rem;
+  margin: auto;
+  background-color: #ffffff;
+  border: 2px solid #808080;
+}
+/* line 7, ../../tnt-registration-flow/scss/module.scss */
+.tnt-registration-flow .user-register-form {
+  padding: 2rem;
+}
+/* line 10, ../../tnt-registration-flow/scss/module.scss */
+.tnt-registration-flow .user-register-form .form-data {
+  margin: 1rem 0;
+  border-width: 0px;
+}
+/* line 14, ../../tnt-registration-flow/scss/module.scss */
+.tnt-registration-flow .user-register-form .form-data .input-details {
+  padding: 0.4rem;
+  margin: 0.8rem 0.2rem;
+  display: block;
+  width: 94%;
+  position: relative;
+}
+/* line 25, ../../tnt-registration-flow/scss/module.scss */
+.tnt-registration-flow .user-register-form .input-agreement {
+  line-height: 2.5rem;
+}
+/* line 28, ../../tnt-registration-flow/scss/module.scss */
+.tnt-registration-flow .user-register-form .input-agreement .signInLink {
+  color: #ff4500;
+}
+/* line 32, ../../tnt-registration-flow/scss/module.scss */
+.tnt-registration-flow .user-register-form .error-msg {
+  color: #ff0000;
+}
+/* line 36, ../../tnt-registration-flow/scss/module.scss */
+.tnt-registration-flow .user-register-form .success-msg {
+  color: #008088;
+}
+/* line 40, ../../tnt-registration-flow/scss/module.scss */
+.tnt-registration-flow .user-register-form .password-rules-msg {
+  color: #20b2aa;
+}
+/* line 44, ../../tnt-registration-flow/scss/module.scss */
+.tnt-registration-flow .user-register-form .user-register-submit {
+  padding: 0.7rem;
+  font-weight: bold;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  margin: 1rem 0;
+  background-color: #00bfff;
+}
+/* line 55, ../../tnt-registration-flow/scss/module.scss */
+.tnt-registration-flow .user-register-form.enable-submit {
+  background-color: #00bfff;
+}
+/* line 59, ../../tnt-registration-flow/scss/module.scss */
+.tnt-registration-flow .user-register-form.disable-submit {
+  background-color: #808080;
+}
+
+/* line 69, ../../tnt-registration-flow/scss/module.scss */
+.tnt {
+  font-family: Myriad;
+}
+
+/* line 73, ../../tnt-registration-flow/scss/module.scss */
+.tnt {
+  background-color: #d3d3d3;
+}
+
+/* line 76, ../../tnt-registration-flow/scss/module.scss */
+.header {
+  width: 30rem;
+  height: 5rem;
+  margin: auto;
+  padding: 0 0 0 3rem;
+}
+/* line 81, ../../tnt-registration-flow/scss/module.scss */
+.header .main-header {
+  font-family: Myriad;
+  font-size: 1.9rem;
+  line-height: 2rem;
+}
+/* line 86, ../../tnt-registration-flow/scss/module.scss */
+.header .sub-header {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #ff4500;
+}
+
+/* line 93, ../../tnt-registration-flow/scss/module.scss */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 10rem;
+}
+
+@media screen and (max-width: 500px) {
+  /* line 102, ../../tnt-registration-flow/scss/module.scss */
+  .tnt-registration-flow {
+    width: 20rem;
+    height: auto;
+  }
+}

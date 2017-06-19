@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="no-js" lang="nl">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, minimal-ui"/>
+    <title>TNT Registration Flow</title>
+
+    <!-- Feature scripts -->
+    <script src="./lib/angular/angular.js"></script>
+    <script src="./dist/tnt-registration-flow/module.js"></script>
+    <!-- // Feature scrips -->
+
+    <!-- stubs / mocks -->
+    <script src="./lib/angular-mocks/angular-mocks.js"></script>
+    <script src="./stubs/services/mockHttp.js"></script>
+    <script src="./stubs/services/registerUser-data-backend.js"></script>
+
+    <!-- the main entry point -->
+
+    <!-- build:css tnt-registration-flow/module.css -->
+    <link rel="stylesheet" href="./tmp/tnt-registration-flow/module.css" />
+    <!-- endbuild -->
+
+</head>
+
+<body ng-app="entry" class="tnt">
+    <header class="header">
+        <div class="main-header">SIGN UP <b>FOR PWS.</b></div>
+        <div class="sub-header">IT ONLY TAKES A MOMENT.</div>
+    </header>
+    <tnt-registration-flow></tnt-registration-flow>
+    <footer class="footer"></footer>
+</body>
+
+<script>
+    angular.module('entry', ['app.tnt-registration-flow','tnt.mock'])
+            .run(function($httpBackend, registerUserDataBackend, $templateCache, $http) {
+        'use strict';
+        $httpBackend.when('POST', "http://localhost:9000/register").respond(registerUserDataBackend.respond('/register'));
+        $httpBackend.when('GET', /^.*/).passThrough();
+                /* Uncomment it when 500 error has to be mocked */
+               /* $httpBackend.when('POST', "http://localhost:9000/register").respond(500);*/
+    });
+
+</script>
+
+</html>

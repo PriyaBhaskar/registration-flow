@@ -1,0 +1,35 @@
+<section class="tnt-registration-flow">
+	<form novalidate id="userRegisterForm" name="userRegisterForm" class="user-register-form" ng-submit="!userRegisterForm.$pristine &&  userRegisterForm.$valid && $ctrl.submitUserRegistration(userRegisterForm)">
+		<div class="form-enter-desc">Please enter your details</div>
+		<fieldset class="form-data">
+			<input class="input-details" type="email" name="email" ng-model="user.email" placeholder="Email"/>
+			<span ng-if="userRegisterForm.email.$invalid" class="error-msg">Please enter a valid email id</span>
+			<input class="input-details" type="password" name="userpassword" ng-model="user.password" placeholder="New password" required tnt-form-validator/>
+			<div ng-if="!userRegisterForm.userpassword.$pristine && userRegisterForm.userpassword.$invalid">
+				<span class="error-msg">Please enter a valid password. </span>
+					<ul class="password-rules-msg">Your password should meet the following rules:
+						<li ng-if="!validate.isOrdered">Passwords must include one increasing straight of at least three letters,
+							like abc, bcd, cde, and so on, up to xyz. They cannot skip letters; abd doesn't
+							count.</li>
+						<li ng-if="!validate.isIgnoreSelected">Passwords may not contain the letters i, o, or l, as these letters can be mistaken
+							for other characters and are therefore confusing.
+						</li>
+						<li ng-if="!validate.isOverlapping">Passwords must contain at least two non-overlapping pairs of letters,
+							like aa, bb, or zz.</li>
+						<li ng-if="!validate.islength">Passwords cannot be longer than 32 characters.</li>
+						<li ng-if="validate.isUppercase">Passwords can only contain lower case alphabetic characters.</li>
+					</ul>
+			</div>
+			<input class="input-details" type="password" name="confirmpassword" ng-model="user.confirmpassword" placeholder="Confirm New password" required ng-pattern="{{user.password}}" tnt-form-validator/>
+			<span ng-if="!userRegisterForm.confirmpassword.$pristine && userRegisterForm.confirmpassword.$invalid" class="error-msg">Please confirm your password correctly</span>
+		</fieldset>
+		<div class="input-agreement">
+			<input type="checkbox" name="signInAgreement" value="true">I agree to TNT's <a class="signInLink" href="http://www.tnt.com/express/en_gb/site/home/terms-conditions.html">terms and condition</a>
+		</div>
+		<button form="userRegisterForm" type="submit" class="user-register-submit" ng-class="userRegisterForm.$valid ? 'enable-submit':'disable-submit'" value="Submit">Next</button>
+		<div class="errors">
+			<div ng-if="$ctrl.register.success" class="success-msg">You have received an e-mail to confirm your registration.</div>
+			<div ng-if="$ctrl.register.error" class="error-msg">Something went wrong. Please try again later.</div>
+		</div>
+	</form>
+</section>
